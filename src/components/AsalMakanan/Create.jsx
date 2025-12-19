@@ -6,7 +6,6 @@ export default function CreateAsalMakanan() {
   const [formData, setFormData] = useState({
     nama: "",
     kodeNegara: "",
-    bendera: "",
     deskripsi: "",
   });
 
@@ -99,22 +98,6 @@ export default function CreateAsalMakanan() {
               />
             </div>
           </div>
-        </div>
-
-        <div className="mb-3">
-          <label htmlFor="bendera" className="form-label">
-            Bendera Emoji
-          </label>
-          <input
-            type="text"
-            className="form-control"
-            id="bendera"
-            name="bendera"
-            value={formData.bendera}
-            onChange={handleChange}
-            placeholder="Contoh: 🇮🇩, 🇲🇾"
-            maxLength="2"
-          />
         </div>
 
         <div className="mb-3">

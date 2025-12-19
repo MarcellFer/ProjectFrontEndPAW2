@@ -74,7 +74,6 @@ export default function AsalMakananList() {
         <table className="table table-striped table-hover table-bordered">
           <thead className="table-dark">
             <tr>
-              <th style={{ width: "5%" }}>Bendera</th>
               <th style={{ width: "20%" }}>Nama Negara</th>
               <th style={{ width: "12%" }}>Kode Negara</th>
               <th style={{ width: "43%" }}>Deskripsi</th>
@@ -84,7 +83,6 @@ export default function AsalMakananList() {
           <tbody>
             {asalMakanan.map((item) => (
               <tr key={item._id}>
-                <td className="fs-3 text-center">{item.bendera || "🌍"}</td>
                 <td className="fw-semibold">{item.nama}</td>
                 <td className="text-center">
                   <span className="badge bg-primary">{item.kodeNegara || "-"}</span>
